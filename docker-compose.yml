@@ -1,0 +1,17 @@
+version: '2'
+services:
+  database:
+    image: "mongo"
+  redis:
+    image: "redis"
+  frontend:
+    image: "angular-v1"
+    ports:
+      - "80:80"
+  web:
+    image: "node-backend"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - database
+      - redis
