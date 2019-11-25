@@ -12,7 +12,8 @@ The app Creates, Read, Update and Delete cars from a DB with Post, Get Put and D
 ## Run
 Go to ..\CRUD_BackEnd\Node>
 
-```node index.js
+```
+node index.js
 ```
 
 ## Usage example
@@ -21,14 +22,16 @@ _For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Development setup
 
-```nmp npm install mongodb --save
+```
+nmp npm install mongodb --save
 npm run dev
 ```
 ## Running the tests
 
 The unit testing was made using Mocha & Chai Js.
 
-```npm run test
+```
+npm run test
 ```
 ## Release History
 
