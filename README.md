@@ -7,8 +7,6 @@
 
 The app Creates, Read, Update and Delete cars from a DB with Post, Get Put and Delete Http methods.
 
-![](header.png)
-
 ## Run
 Go to ..\CRUD_BackEnd\Node>
 
