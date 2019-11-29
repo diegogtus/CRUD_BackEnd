@@ -21,8 +21,8 @@ MongoClient.connect(db.url, (err, database) => {  if (err) return console.log(er
 //cors
 //headers para CORS
 var originsWhitelist = [
-  'http://localhost:4200'
-   //'http://instancia-aws'
+  //'http://localhost:4200'
+   'http://ec2-13-58-204-173.us-east-2.compute.amazonaws.com'
 ];
 var corsOptions = {
 origin: function(origin, callback){
