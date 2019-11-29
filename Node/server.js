@@ -3,6 +3,7 @@ const MongoClient    = require('mongodb').MongoClient;
 const bodyParser     = require('body-parser');
 const db             = require('./config/db');
 const app            = express();
+var model = ('./models/car');
 const cors = require('cors');
 
 const port = 8000;

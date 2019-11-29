@@ -1,7 +1,8 @@
 const fetch = require('node-fetch');
 const redis = require('redis');
 const redis_Port = process.env.port || 6379;
-const client = redis.createClient(redis_Port);
+const client = redis.createClient({host : 'redis', port : 6379});
+//const client = redis.createClient(redis_Port);
 
 module.exports = function(app, db) {
     var ObjectId = require('mongodb').ObjectID; 

@@ -4,14 +4,14 @@ services:
     image: "mongo"
   redis:
     image: "redis"
-  frontend:
-    image: "angular-v1"
+  front:
+    image: "front"
     ports:
-      - "80:80"
-  web:
-    image: "node-backend"
+      - "4200:80"
+  back:
+    image: "back"
     ports:
-      - "3000:3000"
+      - "8000:8000"
     depends_on:
       - database
       - redis
